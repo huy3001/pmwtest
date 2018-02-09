@@ -1,0 +1,48 @@
+/* extend placeholder */
+$breakpoints: (
+    'small': 480px,
+    'mobile': 767px,
+    'tablet': 1024px
+);
+
+$default-breakpoint: root;
+$current-breakpoint: $default-breakpoint;
+$placeholders: ();
+
+@mixin placeholder($name) {
+    // If placeholder doesn't exist yet in `$placeholders` list
+    @if not index($placeholders, $name) {
+        // Store its name
+        $placeholders: append($placeholders, $name) !global;
+
+        // At root level
+        @at-root {
+            // Looping through `$breakpoints`
+            @each $breakpoint, $value in $breakpoints {
+                // Opening a media query block
+                @media (min-width: $value) {
+                    // Generating a placeholder
+                    // Called $name-$breakpoint
+                    %#{$name}-#{$breakpoint} {
+                        @content;
+                    }
+                }
+            }
+
+            // And dumping a placeholder out of any media query as well
+            // so basically at root level
+            %#{$name}-#{$default-breakpoint} {
+                @content;
+            }
+        }
+    }
+
+        // If placeholder already exists, just warn the user
+    @else {
+        @warn "Placeholder `#{$name}` already exists.";
+    }
+}
+
+@mixin font($name) {
+    @extend %#{$name}-#{$current-breakpoint} !optional;
+}

@@ -1,0 +1,47 @@
+/* Color */
+
+
+/* Background */
+
+
+/* Border */
+
+
+/* Break point */
+$full-desktop: 1920px;
+$huge-desktop: 1600px;
+$large-desktop: 1440px;
+$medium-desktop: 1366px;
+$desktop: 1200px;
+$laptop: 992px;
+$tablet: 768px;
+$mobile: 480px;
+
+/* Font */
+@include placeholder('font-style') {
+    font-style: normal;
+    font-weight: normal;
+}
+
+@include placeholder('font-sourcecode-pro') {
+    font-family: 'SourceCodeProRegular', sans-serif;
+    @include font('font-style');
+}
+
+@include placeholder('font-proximanova-regular') {
+    font-family: 'ProximaNovaRegular', sans-serif;
+    @include font('font-style');
+}
+
+@include placeholder('font-proximanova-thin') {
+    font-family: 'ProximaNovaThin', sans-serif;
+    @include font('font-style');
+}
+
+@include placeholder('font-proximanova-bold') {
+    font-family: 'ProximaNovaBold', sans-serif;
+    @include font('font-style');
+}
+
+/* Layout */
+

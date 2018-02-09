@@ -1,1 +1,7 @@
-Ignore list
+# Ignore list #
+
+# Idea files
+.idea
+
+# Node modules files
+node_modules
