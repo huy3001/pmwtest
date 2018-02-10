@@ -90,7 +90,7 @@
     };
 
     /* Window ready functions */
-    $(window).ready(function () {
+    $(window).load(function () {
         // Sidebar toggle //
         mainJs.toggleSidebar();
 
