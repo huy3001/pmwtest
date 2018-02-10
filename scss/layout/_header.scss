@@ -4,9 +4,17 @@
     height: $header__height;
     width: 100%;
     padding: 25px 38px;
+    position: relative;
 
     &__logo {
         display: inline-block;
         vertical-align: top;
+    }
+
+    &__button {
+        margin-top: -7px;
+        position: absolute;
+        right: 38px;
+        top: 50%;
     }
 }

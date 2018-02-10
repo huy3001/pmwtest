@@ -64,6 +64,15 @@
     filter: $value;
 }
 
+/* flexbox */
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
 /* font smoothing */
 @mixin font-smoothing($value: antialiased) {
     @if $value == antialiased {

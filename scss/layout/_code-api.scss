@@ -3,7 +3,7 @@
     background: $bg__header;
     display: table-cell;
     min-height: 100vh;
-    width: 40%;
+    width: 50%;
 
     &__code-box {
         margin: 20px 0 0;
@@ -106,5 +106,12 @@
         &:first-child {
             margin-top: 0;
         }
+    }
+}
+
+/* Desktop */
+@include bp(min-width, $desktop) {
+    .code-api {
+        width: 40%;
     }
 }

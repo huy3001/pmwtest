@@ -9,7 +9,10 @@
         outline: none;
     }
 
-    &_desktop_hidden {
-        display: none;
+    /* Desktop */
+    @include bp(min-width, $desktop) {
+        &_desktop_hidden {
+            display: none;
+        }
     }
 }

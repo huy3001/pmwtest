@@ -2,17 +2,21 @@
 .main-content {
     @include clearfix();
     display: table;
+    table-layout: fixed;
     width: 100%;
     position: relative;
 
-    &:before {
-        content: '';
-        display: block;
-        border-left: 1px solid $bd__info;
-        height: 100%;
-        width: 0;
-        position: absolute;
-        left: 20%;
-        top: 0;
+    /* Desktop */
+    @include bp(min-width, $desktop) {
+        &:before {
+            content: '';
+            display: block;
+            border-left: 1px solid $bd__info;
+            height: 100%;
+            width: 0;
+            position: absolute;
+            left: 20%;
+            top: 0;
+        }
     }
 }

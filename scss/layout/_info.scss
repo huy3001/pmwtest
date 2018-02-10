@@ -2,7 +2,7 @@
 .info {
     display: table-cell;
     min-height: 100vh;
-    width: 40%;
+    width: 50%;
     padding: 30px;
 
     &__title {
@@ -63,5 +63,12 @@
                 padding-left: 25px;
             }
         }
+    }
+}
+
+/* Desktop */
+@include bp(min-width, $desktop) {
+    .info {
+        width: 40%;
     }
 }
