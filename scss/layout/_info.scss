@@ -1,9 +1,8 @@
 /* Info styles */
 .info {
     display: table-cell;
-    min-height: 100vh;
     width: 50%;
-    padding: 30px;
+    padding: 30px 20px;
 
     &__title {
         font-size: $font-size__default + 36;
@@ -70,5 +69,16 @@
 @include bp(min-width, $desktop) {
     .info {
         width: 40%;
+        min-height: 100vh;
+        padding: 30px;
+    }
+}
+
+/* Mobile */
+@include bp(max-width, $tablet - 1) {
+    .info {
+        display: block;
+        width: 100%;
+        padding-top: 88px;
     }
 }

@@ -10,6 +10,10 @@ body {
     @include font-proximanova-regular;
     @include font-smoothing();
     padding: 0;
+
+    &.sidebar_visible {
+        overflow: hidden;
+    }
 }
 
 a {

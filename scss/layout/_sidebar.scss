@@ -6,41 +6,38 @@
     width: 320px;
     overflow-x: hidden;
     overflow-y: auto;
-    padding: 0 38px;
+    padding: 60px 20px;
     position: fixed;
     right: -320px;
     top: 0;
+    z-index: 11;
     @include transition();
+
+    &.shown {
+        right: 0;
+    }
+
+    &_close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
 }
 
 .sign-up {
-    @include clearfix();
-    text-align: right;
-    position: absolute;
-    right: 38px;
-    top: -56px;
 
     &__link {
         @include border-radius(2px);
-        border: 1px solid $bd__sign-up;
-        color: $color__grey;
+        background: $color__default;
+        color: $color__white;
         font-size: $font-size__default - 4;
         text-transform: uppercase;
-        padding: 10px 19px;
-        @include transition();
-
-        &_desktop_right {
-            float: right;
-            margin-left: 25px;
-
-            &:hover {
-                border-color: $bd__white;
-            }
-        }
+        margin-right: 15px;
+        padding: 12px 22px;
     }
 
     &__text {
-        color: $color__grey;
+        color: $color__default;
         font-size: $font-size__default - 3;
         line-height: 36px;
     }
@@ -109,6 +106,36 @@
     .sidebar {
         display: table-cell;
         width: 20%;
+        padding: 0 38px;
         position: static;
+    }
+
+    .sign-up {
+        @include clearfix();
+        text-align: right;
+        position: absolute;
+        right: 38px;
+        top: -56px;
+
+        &__link {
+            background: none;
+            border: 1px solid $bd__sign-up;
+            color: $color__grey;
+            padding: 11px 21px;
+            @include transition();
+
+            &_desktop_right {
+                float: right;
+                margin: 0 0 0 25px;
+
+                &:hover {
+                    border-color: $bd__white;
+                }
+            }
+        }
+
+        &__text {
+            color: $color__grey;
+        }
     }
 }

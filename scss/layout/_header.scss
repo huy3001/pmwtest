@@ -17,4 +17,18 @@
         right: 38px;
         top: 50%;
     }
+
+    /* Mobile */
+    @include bp(max-width, $tablet - 1) {
+        height: 64px;
+        padding: 23px 20px;
+
+        &__logo {
+            max-width: 182px;
+        }
+
+        &__button {
+            right: 20px;
+        }
+    }
 }
