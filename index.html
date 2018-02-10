@@ -6,8 +6,6 @@
     <title>Paymentwall Testing</title>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <link rel="stylesheet" href="css/main.css"/>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body class="page">
     <div class="page__inner">
@@ -306,49 +304,55 @@
                         <strong class="tab-detail__heading">Initialize</strong>
                         <div class="code-api__code-box">
                             <pre><code>
-                                import com.paymentwall.java.Base;
+    import com.paymentwall.java.Base;
 
-                                Base.setAppKey("YOUR_APPLICATION_KEY");
-                                Base.setSecretKey("YOUR_SECRET_KEY");
-                                Base.setApiType(Base.API_GOODS);
+            Base.setAppKey("YOUR_APPLICATION_KEY");
+            Base.setSecretKey("YOUR_SECRET_KEY");
+            Base.setApiType(Base.API_GOODS);
                             </code></pre>
                         </div>
 
                         <strong class="tab-detail__heading">Stored Widget Call</strong>
                         <div class="code-api__code-box">
                             <pre><code>
-                                import com.paymentwall.java.Widget;
-                                import com.paymentwall.java.WidgetBuilder;
-                                import java.util.LinkedHashMap;
+    import com.paymentwall.java.Widget;
+            import com.paymentwall.java.WidgetBuilder;
+            import java.util.LinkedHashMap;
 
-                                WidgetBuilder widgetBuilder = new WidgetBuilder
-                                (userid, widgetcode);
+            WidgetBuilder widgetBuilder = new WidgetBuilder
+            (userid, widgetcode);
 
-                                widgetBuilder.setExtraParams(new LinkedHashMap
-                                <String, String>(){
-                                {
-                                put("email", email);
-                                put("timestamp", timestamp);
-                                }
-                                });
+            widgetBuilder.setExtraParams(new LinkedHashMap
+            <String, String>(){
+            {
+            put("email", email);
+            put("timestamp", timestamp);
+            }
+            });
 
-                                Widget widget = widgetBuilder.build();
+            Widget widget = widgetBuilder.build();
                             </code></pre>
                         </div>
 
                         <strong class="tab-detail__heading">Result Example</strong>
                         <div class="code-api__code-box">
                             <pre><code>
-                                widget.getHtmlCode();
+    widget.getHtmlCode();
                             </code></pre>
                         </div>
 
                         <div class="code-api__iframe">
-                            <iframe src="https://api.paymentwall.com/api/subscription?uid=
+                            <span>&lt;iframe src=&quot;</span>
+                            <a class="link code-api__link" href="https://api.paymentwall.com/api/subscription?uid=
                             paymentwalltest&widget=p1_1&sign_version=3&sign=f05c73860fe
                             07d37a4b04225b71e8157bfdacafb4a5259bd342db86098d201a
                             f&key=6e380d3e4954ef8296676f8a41cac692&email=test%40
-                            paymentwall.com&timestamp=1478057670"  width="750" frameborder="0" height="800"></iframe>
+                            paymentwall.com&timestamp=1478057670">https://api.paymentwall.com/api/subscription?uid=
+                            paymentwalltest&widget=p1_1&sign_version=3&sign=f05c73860fe
+                            07d37a4b04225b71e8157bfdacafb4a5259bd342db86098d201a
+                            f&key=6e380d3e4954ef8296676f8a41cac692&email=test%40
+                            paymentwall.com&timestamp=1478057670</a>
+                            <span>&quot; width=&quot;750&quot; frameborder=&quot;0&quot; height=&quot;800&quot;&gt;&lt;/iframe&gt;</span>
                         </div>
                     </div>
                     <div id="java" class="tab-detail"></div>
@@ -359,5 +363,9 @@
             </div>
         </main>
     </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

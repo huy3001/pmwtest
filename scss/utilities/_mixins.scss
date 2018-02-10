@@ -93,12 +93,12 @@
 
 @mixin font-proximanova-thin() {
     font-family: 'ProximaNovaThin', sans-serif;
-    font-weight: 100;
+    @include font-style;
 }
 
 @mixin font-proximanova-bold() {
     font-family: 'ProximaNovaBold', sans-serif;
-    font-weight: 700;
+    @include font-style;
 }
 
 /* text stroke */

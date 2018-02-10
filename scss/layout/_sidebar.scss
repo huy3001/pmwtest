@@ -1,7 +1,7 @@
 /* Sidebar styles */
 .sidebar {
     background: $bg__sidebar;
-    float: left;
+    display: table-cell;
     width: 20%;
     padding: 0 38px;
 }

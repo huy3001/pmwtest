@@ -4,32 +4,32 @@
 
 @font-face {
   font-family: 'SourceCodeProRegular';
-  src: url("../../fonts/SourceCodeProRegular.eot");
-  src: url("../../fonts/SourceCodeProRegular.eot") format("embedded-opentype"), url("../../fonts/SourceCodeProRegular.woff2") format("woff2"), url("../../fonts/SourceCodeProRegular.woff") format("woff"), url("../../fonts/SourceCodeProRegular.ttf") format("truetype"), url("../../fonts/SourceCodeProRegular.svg#SourceCodeProRegular") format("svg");
+  src: url("../fonts/SourceCodeProRegular.eot");
+  src: url("../fonts/SourceCodeProRegular.eot") format("embedded-opentype"), url("../fonts/SourceCodeProRegular.woff2") format("woff2"), url("../fonts/SourceCodeProRegular.woff") format("woff"), url("../fonts/SourceCodeProRegular.ttf") format("truetype"), url("../fonts/SourceCodeProRegular.svg#SourceCodeProRegular") format("svg");
 }
 
 /* ProximaNova Regular */
 
 @font-face {
   font-family: 'ProximaNovaRegular';
-  src: url("../../fonts/ProximaNovaRegular.eot");
-  src: url("../../fonts/ProximaNovaRegular.eot") format("embedded-opentype"), url("../../fonts/ProximaNovaRegular.woff2") format("woff2"), url("../../fonts/ProximaNovaRegular.woff") format("woff"), url("../../fonts/ProximaNovaRegular.ttf") format("truetype"), url("../../fonts/ProximaNovaRegular.svg#ProximaNovaRegular") format("svg");
+  src: url("../fonts/ProximaNovaRegular.eot");
+  src: url("../fonts/ProximaNovaRegular.eot") format("embedded-opentype"), url("../fonts/ProximaNovaRegular.woff2") format("woff2"), url("../fonts/ProximaNovaRegular.woff") format("woff"), url("../fonts/ProximaNovaRegular.ttf") format("truetype"), url("../fonts/ProximaNovaRegular.svg#ProximaNovaRegular") format("svg");
 }
 
 /* ProximaNova Thin */
 
 @font-face {
   font-family: 'ProximaNovaThin';
-  src: url("../../fonts/ProximaNovaThin.eot");
-  src: url("../../fonts/ProximaNovaThin.eot") format("embedded-opentype"), url("../../fonts/ProximaNovaThin.woff2") format("woff2"), url("../../fonts/ProximaNovaThin.woff") format("woff"), url("../../fonts/ProximaNovaThin.ttf") format("truetype"), url("../../fonts/ProximaNovaThin.svg#ProximaNovaRegular") format("svg");
+  src: url("../fonts/ProximaNovaThin.eot");
+  src: url("../fonts/ProximaNovaThin.eot") format("embedded-opentype"), url("../fonts/ProximaNovaThin.woff2") format("woff2"), url("../fonts/ProximaNovaThin.woff") format("woff"), url("../fonts/ProximaNovaThin.ttf") format("truetype"), url("../fonts/ProximaNovaThin.svg#ProximaNovaRegular") format("svg");
 }
 
 /* ProximaNova Bold */
 
 @font-face {
   font-family: 'ProximaNovaBold';
-  src: url("../../fonts/ProximaNovaBold.eot");
-  src: url("../../fonts/ProximaNovaBold.eot") format("embedded-opentype"), url("../../fonts/ProximaNovaBold.woff2") format("woff2"), url("../../fonts/ProximaNovaBold.woff") format("woff"), url("../../fonts/ProximaNovaBold.ttf") format("truetype"), url("../../fonts/ProximaNovaBold.svg#ProximaNovaRegular") format("svg");
+  src: url("../fonts/ProximaNovaBold.eot");
+  src: url("../fonts/ProximaNovaBold.eot") format("embedded-opentype"), url("../fonts/ProximaNovaBold.woff2") format("woff2"), url("../fonts/ProximaNovaBold.woff") format("woff"), url("../fonts/ProximaNovaBold.ttf") format("truetype"), url("../fonts/ProximaNovaBold.svg#ProximaNovaRegular") format("svg");
 }
 
 /* animation */
@@ -610,7 +610,8 @@ p {
 .table__heading {
   font-size: 13px;
   font-family: 'ProximaNovaBold', sans-serif;
-  font-weight: 700;
+  font-style: normal;
+  font-weight: normal;
   line-height: 18px;
   text-align: left;
   vertical-align: top;
@@ -632,16 +633,19 @@ p {
   border: 1px solid #dfdfdf;
   background: #f9fafd;
   color: #f92672;
+  font-family: 'SourceCodeProRegular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
   padding: 2px 5px;
 }
 
-/* line 28, scss/components/_tables.scss */
+/* line 29, scss/components/_tables.scss */
 
 .table__text_grey {
   color: #9fa4a6;
 }
 
-/* line 32, scss/components/_tables.scss */
+/* line 33, scss/components/_tables.scss */
 
 .table__text_red {
   color: #f46228;
@@ -685,7 +689,7 @@ p {
 
 .sidebar {
   background: #f9fcfd;
-  float: left;
+  display: table-cell;
   width: 20%;
   padding: 0 38px;
 }
@@ -764,7 +768,8 @@ p {
   color: #7a8387;
   font-size: 12px;
   font-family: 'ProximaNovaBold', sans-serif;
-  font-weight: 700;
+  font-style: normal;
+  font-weight: normal;
   text-transform: uppercase;
   margin: 40px 0 0;
 }
@@ -829,7 +834,7 @@ p {
 /* line 2, scss/layout/_info.scss */
 
 .info {
-  float: left;
+  display: table-cell;
   min-height: 100vh;
   width: 40%;
   padding: 30px;
@@ -840,7 +845,8 @@ p {
 .info__title {
   font-size: 52px;
   font-family: 'ProximaNovaThin', sans-serif;
-  font-weight: 100;
+  font-style: normal;
+  font-weight: normal;
   margin: 0 0 25px;
 }
 
@@ -862,7 +868,8 @@ p {
 
 .info__heading_bold {
   font-family: 'ProximaNovaBold', sans-serif;
-  font-weight: 700;
+  font-style: normal;
+  font-weight: normal;
 }
 
 /* line 28, scss/layout/_info.scss */
@@ -902,11 +909,12 @@ p {
 /* line 57, scss/layout/_info.scss */
 
 .info__result .table__column {
+  font-size: 14px;
   line-height: 22px;
   padding: 20px 0;
 }
 
-/* line 61, scss/layout/_info.scss */
+/* line 62, scss/layout/_info.scss */
 
 .info__result .table__column:last-child {
   padding-left: 25px;
@@ -917,8 +925,163 @@ p {
 /* line 2, scss/layout/_code-api.scss */
 
 .code-api {
-  float: right;
+  background: #21252b;
+  display: table-cell;
+  min-height: 100vh;
   width: 40%;
+}
+
+/* line 8, scss/layout/_code-api.scss */
+
+.code-api__code-box {
+  margin: 20px 0 0;
+}
+
+/* line 11, scss/layout/_code-api.scss */
+
+.code-api__code-box .hljs {
+  background: #282c34;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: 'SourceCodeProRegular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  padding: 0;
+}
+
+/* line 20, scss/layout/_code-api.scss */
+
+.code-api__code-box .hljs-selector-tag,
+.code-api__code-box .hljs-keyword {
+  font-weight: 400;
+}
+
+/* line 26, scss/layout/_code-api.scss */
+
+.code-api__code-box .hljs-selector-tag:first-child {
+  color: #c678dd;
+}
+
+/* line 31, scss/layout/_code-api.scss */
+
+.code-api__code-box .hljs-selector-class {
+  color: #44a9fe;
+}
+
+/* line 35, scss/layout/_code-api.scss */
+
+.code-api__code-box .hljs-keyword {
+  color: #c678dd;
+}
+
+/* line 39, scss/layout/_code-api.scss */
+
+.code-api__code-box .hljs-string {
+  color: #a3e765;
+}
+
+/* line 44, scss/layout/_code-api.scss */
+
+.code-api__iframe {
+  color: #ffffff;
+  line-height: 20px;
+  padding: 30px 0;
+}
+
+/* line 51, scss/layout/_code-api.scss */
+
+.tab-list {
+  background: #282c34;
+}
+
+/* line 48, scss/utilities/_mixins.scss */
+
+.tab-list:before,
+.tab-list:after {
+  content: "";
+  display: table;
+}
+
+/* line 53, scss/utilities/_mixins.scss */
+
+.tab-list:after {
+  clear: both;
+}
+
+/* line 55, scss/layout/_code-api.scss */
+
+.tab-list__item {
+  float: left;
+  width: 20%;
+}
+
+/* line 61, scss/layout/_code-api.scss */
+
+.tab-list__item_active .tab-list__link {
+  color: #fec013;
+}
+
+/* line 64, scss/layout/_code-api.scss */
+
+.tab-list__item_active .tab-list__link:before {
+  background: #fec013;
+}
+
+/* line 70, scss/layout/_code-api.scss */
+
+.tab-list__link {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 78, scss/layout/_code-api.scss */
+
+.tab-list__link:before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 89, scss/layout/_code-api.scss */
+
+.tab-list__link:hover {
+  color: #fec013;
+}
+
+/* line 95, scss/layout/_code-api.scss */
+
+.tab-content {
+  padding: 30px;
+}
+
+/* line 100, scss/layout/_code-api.scss */
+
+.tab-detail__heading {
+  display: block;
+  color: #ffffff;
+  font-family: 'ProximaNovaBold', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin: 30px 0 10px;
+}
+
+/* line 106, scss/layout/_code-api.scss */
+
+.tab-detail__heading:first-child {
+  margin-top: 0;
 }
 
 /* Home page styles */
@@ -926,6 +1089,8 @@ p {
 /* line 2, scss/pages/_home.scss */
 
 .main-content {
+  display: table;
+  width: 100%;
   position: relative;
 }
 
@@ -943,7 +1108,7 @@ p {
   clear: both;
 }
 
-/* line 6, scss/pages/_home.scss */
+/* line 8, scss/pages/_home.scss */
 
 .main-content:before {
   content: '';

@@ -1,6 +1,6 @@
 /* Info styles */
 .info {
-    float: left;
+    display: table-cell;
     min-height: 100vh;
     width: 40%;
     padding: 30px;
@@ -55,6 +55,7 @@
 
     &__result {
         .table__column {
+            font-size: $font-size__default - 2;
             line-height: 22px;
             padding: 20px 0;
 

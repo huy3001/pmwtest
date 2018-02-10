@@ -1,6 +1,8 @@
 /* Home page styles */
 .main-content {
     @include clearfix();
+    display: table;
+    width: 100%;
     position: relative;
 
     &:before {

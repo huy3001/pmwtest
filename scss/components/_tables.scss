@@ -22,6 +22,7 @@
         border: 1px solid $bd__table_code;
         background: $bg__table_code;
         color: $color__pink;
+        @include font-sourcecode-pro;
         padding: 2px 5px;
     }
 
