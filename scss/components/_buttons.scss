@@ -1,0 +1,15 @@
+/* Buttons styles */
+.button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &_desktop_hidden {
+        display: none;
+    }
+}

@@ -1,0 +1,12 @@
+/* Header styles */
+.header {
+    background: $bg__header;
+    height: $header__height;
+    width: 100%;
+    padding: 25px 38px;
+
+    &__logo {
+        display: inline-block;
+        vertical-align: top;
+    }
+}

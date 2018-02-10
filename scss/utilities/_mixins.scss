@@ -43,6 +43,18 @@
     #{$property}: calc(#{$expression});
 }
 
+/* clearfix */
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
 /* filter */
 @mixin filter($value) {
     -webkit-filter: $value;
@@ -61,6 +73,32 @@
         -webkit-font-smoothing: subpixel-antialiased;
         -moz-osx-font-smoothing: auto;
     }
+}
+
+/* font styles */
+@mixin font-style() {
+    font-style: normal;
+    font-weight: normal;
+}
+
+@mixin font-sourcecode-pro() {
+    font-family: 'SourceCodeProRegular', sans-serif;
+    @include font-style;
+}
+
+@mixin font-proximanova-regular() {
+    font-family: 'ProximaNovaRegular', sans-serif;
+    @include font-style;
+}
+
+@mixin font-proximanova-thin() {
+    font-family: 'ProximaNovaThin', sans-serif;
+    font-weight: 100;
+}
+
+@mixin font-proximanova-bold() {
+    font-family: 'ProximaNovaBold', sans-serif;
+    font-weight: 700;
 }
 
 /* text stroke */
@@ -98,7 +136,7 @@
 }
 
 /* placeholder */
-@mixin input-placeholder {
+@mixin input-placeholder() {
     ::-webkit-input-placeholder {
         @content
     }

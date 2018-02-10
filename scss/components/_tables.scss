@@ -1,0 +1,35 @@
+/* Tables styles */
+.table {
+    border-collapse: collapse;
+
+    &__heading {
+        font-size: $font-size__default - 3;
+        @include font-proximanova-bold;
+        line-height: 18px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    &__column {
+        color: $color__black;
+        font-size: $font-size__default - 3;
+        line-height: 18px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    &__code {
+        border: 1px solid $bd__table_code;
+        background: $bg__table_code;
+        color: $color__pink;
+        padding: 2px 5px;
+    }
+
+    &__text_grey {
+        color: $color__text_grey;
+    }
+
+    &__text_red {
+        color: $color__text_red;
+    }
+}

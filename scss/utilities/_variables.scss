@@ -1,11 +1,27 @@
 /* Color */
-
+$color__default: #474747;
+$color__white: #ffffff;
+$color__black: #000000;
+$color__grey: #949494;
+$color__blue: #3a72c7;
+$color__pink: #f92672;
+$color__menu_title: #7a8387;
+$color__text_grey: #9fa4a6;
+$color__text_red: #f46228;
 
 /* Background */
-
+$bg__white: $color__white;
+$bg__sidebar: #f9fcfd;
+$bg__header: #21252b;
+$bg__table_code: #f9fafd;
 
 /* Border */
-
+$bd__white: $color__white;
+$bd__sign-up: $color__grey;
+$bd__info: #ebf1f3;
+$bd__table_heading: #c0c0c0;
+$bd__table_column: #efeff0;
+$bd__table_code: #dfdfdf;
 
 /* Break point */
 $full-desktop: 1920px;
@@ -18,30 +34,7 @@ $tablet: 768px;
 $mobile: 480px;
 
 /* Font */
-@include placeholder('font-style') {
-    font-style: normal;
-    font-weight: normal;
-}
-
-@include placeholder('font-sourcecode-pro') {
-    font-family: 'SourceCodeProRegular', sans-serif;
-    @include font('font-style');
-}
-
-@include placeholder('font-proximanova-regular') {
-    font-family: 'ProximaNovaRegular', sans-serif;
-    @include font('font-style');
-}
-
-@include placeholder('font-proximanova-thin') {
-    font-family: 'ProximaNovaThin', sans-serif;
-    @include font('font-style');
-}
-
-@include placeholder('font-proximanova-bold') {
-    font-family: 'ProximaNovaBold', sans-serif;
-    @include font('font-style');
-}
+$font-size__default: 16px;
 
 /* Layout */
-
+$header__height: 76px;

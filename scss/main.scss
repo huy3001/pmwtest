@@ -1,10 +1,21 @@
 /* Main styles */
-
-@import "base/normalize";
-@import "base/typography";
-
 @import "utilities/fonts";
 @import "utilities/mixins";
 @import "utilities/functions";
 @import "utilities/placeholders";
 @import "utilities/variables";
+
+@import "base/normalize";
+@import "base/typography";
+
+@import "components/buttons";
+@import "components/tables";
+@import "components/links";
+
+@import "layout/header";
+@import "layout/sidebar";
+@import "layout/navigation";
+@import "layout/info";
+@import "layout/code-api";
+
+@import "pages/home";

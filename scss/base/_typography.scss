@@ -1,0 +1,34 @@
+/* Typography styles */
+* {
+    @include box-sizing(border-box);
+}
+
+body {
+    background: $bg__white;
+    color: $color__default;
+    font-size: $font-size__default;
+    @include font-proximanova-regular;
+    @include font-smoothing();
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}

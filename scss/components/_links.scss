@@ -1,0 +1,8 @@
+/* Links styles */
+.link {
+    color: $color__blue;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

@@ -1,5 +1,87 @@
 /* Main styles */
 
+/* SourceCodePro Regular */
+
+@font-face {
+  font-family: 'SourceCodeProRegular';
+  src: url("../../fonts/SourceCodeProRegular.eot");
+  src: url("../../fonts/SourceCodeProRegular.eot") format("embedded-opentype"), url("../../fonts/SourceCodeProRegular.woff2") format("woff2"), url("../../fonts/SourceCodeProRegular.woff") format("woff"), url("../../fonts/SourceCodeProRegular.ttf") format("truetype"), url("../../fonts/SourceCodeProRegular.svg#SourceCodeProRegular") format("svg");
+}
+
+/* ProximaNova Regular */
+
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url("../../fonts/ProximaNovaRegular.eot");
+  src: url("../../fonts/ProximaNovaRegular.eot") format("embedded-opentype"), url("../../fonts/ProximaNovaRegular.woff2") format("woff2"), url("../../fonts/ProximaNovaRegular.woff") format("woff"), url("../../fonts/ProximaNovaRegular.ttf") format("truetype"), url("../../fonts/ProximaNovaRegular.svg#ProximaNovaRegular") format("svg");
+}
+
+/* ProximaNova Thin */
+
+@font-face {
+  font-family: 'ProximaNovaThin';
+  src: url("../../fonts/ProximaNovaThin.eot");
+  src: url("../../fonts/ProximaNovaThin.eot") format("embedded-opentype"), url("../../fonts/ProximaNovaThin.woff2") format("woff2"), url("../../fonts/ProximaNovaThin.woff") format("woff"), url("../../fonts/ProximaNovaThin.ttf") format("truetype"), url("../../fonts/ProximaNovaThin.svg#ProximaNovaRegular") format("svg");
+}
+
+/* ProximaNova Bold */
+
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url("../../fonts/ProximaNovaBold.eot");
+  src: url("../../fonts/ProximaNovaBold.eot") format("embedded-opentype"), url("../../fonts/ProximaNovaBold.woff2") format("woff2"), url("../../fonts/ProximaNovaBold.woff") format("woff"), url("../../fonts/ProximaNovaBold.ttf") format("truetype"), url("../../fonts/ProximaNovaBold.svg#ProximaNovaRegular") format("svg");
+}
+
+/* animation */
+
+/* border radius */
+
+/* box shadow */
+
+/* box sizing */
+
+/* backface visibility */
+
+/* calculate */
+
+/* clearfix */
+
+/* filter */
+
+/* font smoothing */
+
+/* font styles */
+
+/* text stroke */
+
+/* transform */
+
+/* transform style */
+
+/* transition */
+
+/* opacity */
+
+/* placeholder */
+
+/* breakpoint with one condition(min or max) */
+
+/* breakpoint with two conditions (min and max) */
+
+/* extend placeholder */
+
+/* Color */
+
+/* Background */
+
+/* Border */
+
+/* Break point */
+
+/* Font */
+
+/* Layout */
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -438,68 +520,438 @@ template {
   display: none;
 }
 
-/* SourceCodePro Regular */
+/* Typography styles */
 
-@font-face {
-  font-family: 'SourceCodeProRegular';
-  src: url("../../fonts/SourceCodeProRegular.eot");
-  src: url("../../fonts/SourceCodeProRegular.eot") format("embedded-opentype"), url("../../fonts/SourceCodeProRegular.woff2") format("woff2"), url("../../fonts/SourceCodeProRegular.woff") format("woff"), url("../../fonts/SourceCodeProRegular.ttf") format("truetype"), url("../../fonts/SourceCodeProRegular.svg#SourceCodeProRegular") format("svg");
+/* line 2, scss/base/_typography.scss */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* ProximaNova Regular */
+/* line 6, scss/base/_typography.scss */
 
-@font-face {
-  font-family: 'ProximaNovaRegular';
-  src: url("../../fonts/ProximaNovaRegular.eot");
-  src: url("../../fonts/ProximaNovaRegular.eot") format("embedded-opentype"), url("../../fonts/ProximaNovaRegular.woff2") format("woff2"), url("../../fonts/ProximaNovaRegular.woff") format("woff"), url("../../fonts/ProximaNovaRegular.ttf") format("truetype"), url("../../fonts/ProximaNovaRegular.svg#ProximaNovaRegular") format("svg");
+body {
+  background: #ffffff;
+  color: #474747;
+  font-size: 16px;
+  font-family: 'ProximaNovaRegular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-/* ProximaNova Thin */
+/* line 15, scss/base/_typography.scss */
 
-@font-face {
-  font-family: 'ProximaNovaThin';
-  src: url("../../fonts/ProximaNovaThin.eot");
-  src: url("../../fonts/ProximaNovaThin.eot") format("embedded-opentype"), url("../../fonts/ProximaNovaThin.woff2") format("woff2"), url("../../fonts/ProximaNovaThin.woff") format("woff"), url("../../fonts/ProximaNovaThin.ttf") format("truetype"), url("../../fonts/ProximaNovaThin.svg#ProximaNovaRegular") format("svg");
+a {
+  text-decoration: none;
 }
 
-/* ProximaNova Bold */
+/* line 19, scss/base/_typography.scss */
 
-@font-face {
-  font-family: 'ProximaNovaBold';
-  src: url("../../fonts/ProximaNovaBold.eot");
-  src: url("../../fonts/ProximaNovaBold.eot") format("embedded-opentype"), url("../../fonts/ProximaNovaBold.woff2") format("woff2"), url("../../fonts/ProximaNovaBold.woff") format("woff"), url("../../fonts/ProximaNovaBold.ttf") format("truetype"), url("../../fonts/ProximaNovaBold.svg#ProximaNovaRegular") format("svg");
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-/* animation */
+/* line 26, scss/base/_typography.scss */
 
-/* border radius */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-/* box shadow */
+/* line 32, scss/base/_typography.scss */
 
-/* box sizing */
+p {
+  margin: 0;
+}
 
-/* backface visibility */
+/* Buttons styles */
 
-/* calculate */
+/* line 2, scss/components/_buttons.scss */
 
-/* filter */
+.button {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
 
-/* font smoothing */
+/* line 8, scss/components/_buttons.scss */
 
-/* text stroke */
+.button:focus {
+  outline: none;
+}
 
-/* transform */
+/* line 12, scss/components/_buttons.scss */
 
-/* transform style */
+.button_desktop_hidden {
+  display: none;
+}
 
-/* transition */
+/* Tables styles */
 
-/* opacity */
+/* line 2, scss/components/_tables.scss */
 
-/* placeholder */
+.table {
+  border-collapse: collapse;
+}
 
-/* breakpoint with one condition(min or max) */
+/* line 5, scss/components/_tables.scss */
 
-/* breakpoint with two conditions (min and max) */
+.table__heading {
+  font-size: 13px;
+  font-family: 'ProximaNovaBold', sans-serif;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+}
 
-/* extend placeholder */
+/* line 13, scss/components/_tables.scss */
+
+.table__column {
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* line 21, scss/components/_tables.scss */
+
+.table__code {
+  border: 1px solid #dfdfdf;
+  background: #f9fafd;
+  color: #f92672;
+  padding: 2px 5px;
+}
+
+/* line 28, scss/components/_tables.scss */
+
+.table__text_grey {
+  color: #9fa4a6;
+}
+
+/* line 32, scss/components/_tables.scss */
+
+.table__text_red {
+  color: #f46228;
+}
+
+/* Links styles */
+
+/* line 2, scss/components/_links.scss */
+
+.link {
+  color: #3a72c7;
+}
+
+/* line 5, scss/components/_links.scss */
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Header styles */
+
+/* line 2, scss/layout/_header.scss */
+
+.header {
+  background: #21252b;
+  height: 76px;
+  width: 100%;
+  padding: 25px 38px;
+}
+
+/* line 8, scss/layout/_header.scss */
+
+.header__logo {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Sidebar styles */
+
+/* line 2, scss/layout/_sidebar.scss */
+
+.sidebar {
+  background: #f9fcfd;
+  float: left;
+  width: 20%;
+  padding: 0 38px;
+}
+
+/* line 9, scss/layout/_sidebar.scss */
+
+.sign-up {
+  text-align: right;
+  position: absolute;
+  right: 38px;
+  top: -56px;
+}
+
+/* line 48, scss/utilities/_mixins.scss */
+
+.sign-up:before,
+.sign-up:after {
+  content: "";
+  display: table;
+}
+
+/* line 53, scss/utilities/_mixins.scss */
+
+.sign-up:after {
+  clear: both;
+}
+
+/* line 16, scss/layout/_sidebar.scss */
+
+.sign-up__link {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #949494;
+  color: #949494;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 10px 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 25, scss/layout/_sidebar.scss */
+
+.sign-up__link_desktop_right {
+  float: right;
+  margin-left: 25px;
+}
+
+/* line 29, scss/layout/_sidebar.scss */
+
+.sign-up__link_desktop_right:hover {
+  border-color: #ffffff;
+}
+
+/* line 35, scss/layout/_sidebar.scss */
+
+.sign-up__text {
+  color: #949494;
+  font-size: 13px;
+  line-height: 36px;
+}
+
+/* line 42, scss/layout/_sidebar.scss */
+
+.menu {
+  padding: 30px 0;
+}
+
+/* line 45, scss/layout/_sidebar.scss */
+
+.menu__title {
+  display: block;
+  color: #7a8387;
+  font-size: 12px;
+  font-family: 'ProximaNovaBold', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 40px 0 0;
+}
+
+/* line 53, scss/layout/_sidebar.scss */
+
+.menu__title:first-child {
+  margin: 0;
+}
+
+/* line 58, scss/layout/_sidebar.scss */
+
+.menu__list {
+  margin: 10px 0 0;
+}
+
+/* line 64, scss/layout/_sidebar.scss */
+
+.menu__item_active .menu__link {
+  color: #3a72c7;
+}
+
+/* line 69, scss/layout/_sidebar.scss */
+
+.menu__item_active .menu__subitem:first-child {
+  position: relative;
+}
+
+/* line 72, scss/layout/_sidebar.scss */
+
+.menu__item_active .menu__subitem:first-child:before {
+  content: '';
+  display: block;
+  background: url("../images/shape.png") no-repeat center transparent;
+  height: 10px;
+  width: 10px;
+  margin: -5px 0 0;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+}
+
+/* line 88, scss/layout/_sidebar.scss */
+
+.menu__link,
+.menu__sublink {
+  color: #474747;
+  display: block;
+  line-height: 30px;
+}
+
+/* line 95, scss/layout/_sidebar.scss */
+
+.menu__sublist {
+  padding-left: 30px;
+}
+
+/* Navigation styles */
+
+/* Info styles */
+
+/* line 2, scss/layout/_info.scss */
+
+.info {
+  float: left;
+  min-height: 100vh;
+  width: 40%;
+  padding: 30px;
+}
+
+/* line 8, scss/layout/_info.scss */
+
+.info__title {
+  font-size: 52px;
+  font-family: 'ProximaNovaThin', sans-serif;
+  font-weight: 100;
+  margin: 0 0 25px;
+}
+
+/* line 14, scss/layout/_info.scss */
+
+.info__text {
+  line-height: 30px;
+}
+
+/* line 18, scss/layout/_info.scss */
+
+.info__heading {
+  font-size: 22px;
+  font-weight: normal;
+  margin: 40px 0 15px;
+}
+
+/* line 23, scss/layout/_info.scss */
+
+.info__heading_bold {
+  font-family: 'ProximaNovaBold', sans-serif;
+  font-weight: 700;
+}
+
+/* line 28, scss/layout/_info.scss */
+
+.info__table_responsive {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* line 34, scss/layout/_info.scss */
+
+.info__table {
+  margin: 10px 0 0;
+}
+
+/* line 37, scss/layout/_info.scss */
+
+.info__table .table__heading {
+  border-bottom: 1px solid #c0c0c0;
+  padding: 10px 12px;
+}
+
+/* line 42, scss/layout/_info.scss */
+
+.info__table .table__column {
+  border-bottom: 1px solid #efeff0;
+  padding: 20px 12px;
+}
+
+/* line 49, scss/layout/_info.scss */
+
+.info__table .table__row:last-child .table__column {
+  border-color: #c0c0c0;
+}
+
+/* line 57, scss/layout/_info.scss */
+
+.info__result .table__column {
+  line-height: 22px;
+  padding: 20px 0;
+}
+
+/* line 61, scss/layout/_info.scss */
+
+.info__result .table__column:last-child {
+  padding-left: 25px;
+}
+
+/* Code api styles */
+
+/* line 2, scss/layout/_code-api.scss */
+
+.code-api {
+  float: right;
+  width: 40%;
+}
+
+/* Home page styles */
+
+/* line 2, scss/pages/_home.scss */
+
+.main-content {
+  position: relative;
+}
+
+/* line 48, scss/utilities/_mixins.scss */
+
+.main-content:before,
+.main-content:after {
+  content: "";
+  display: table;
+}
+
+/* line 53, scss/utilities/_mixins.scss */
+
+.main-content:after {
+  clear: both;
+}
+
+/* line 6, scss/pages/_home.scss */
+
+.main-content:before {
+  content: '';
+  display: block;
+  border-left: 1px solid #ebf1f3;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 20%;
+  top: 0;
+}
