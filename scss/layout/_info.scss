@@ -80,5 +80,11 @@
         display: block;
         width: 100%;
         padding-top: 88px;
+
+        &__table {
+            .table__heading {
+                border-top: 1px solid $bd__table_heading;
+            }
+        }
     }
 }

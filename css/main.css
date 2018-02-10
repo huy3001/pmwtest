@@ -1040,6 +1040,12 @@ p {
     width: 100%;
     padding-top: 88px;
   }
+
+  /* line 85, scss/layout/_info.scss */
+
+  .info__table .table__heading {
+    border-top: 1px solid #c0c0c0;
+  }
 }
 
 /* Code api styles */
